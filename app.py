@@ -1,12 +1,12 @@
 import pymysql.cursors
 
 # Função para abrir conexão com o banco de dados
-def open_connection(db_name='biblioteca'):
+def open_connection(db_name='Seu banco de dados'):
     try:
         connection = pymysql.connect(
             host='localhost',
             user='root',
-            password='01102006Pedro$',
+            password='Sua senha',
             database=db_name,
             cursorclass=pymysql.cursors.DictCursor
         )
@@ -137,4 +137,5 @@ while True:
 
     else:
         print("Function not found")
+
         connection.close()
