@@ -4,8 +4,8 @@ import pymysql.cursors
 def open_connection(db_name='Seu banco de dados'):
     try:
         connection = pymysql.connect(
-            host='localhost',
-            user='root',
+            host='Seu host',
+            user='Seu usuario',
             password='Sua senha',
             database=db_name,
             cursorclass=pymysql.cursors.DictCursor
@@ -139,3 +139,4 @@ while True:
         print("Function not found")
 
         connection.close()
+
